@@ -1,0 +1,12 @@
+name: Test project
+on: push 
+jobs:
+  test:
+    runs-on: ubuntu-latetst 
+    steps:
+      - name: get code
+        uses: actions/checkout@v4
+      - name: install dependencies
+        run: npm ci
+      - name: test runner
+        run: npm test
