@@ -9,4 +9,13 @@ jobs:
       - name: install dependencies
         run: npm ci
       - name: test runner
-        run: npm test
+        run: npm test  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v4
+      - name: install dependencies
+        run: npm ci
+      - name: deploy
+        run: echo "Deploy...."
