@@ -1,8 +1,8 @@
-name: Test project
-on: workflow_dispatch 
+name: Test_project
+on: workflow_dispatch
 jobs:
   test:
-    runs-on: ubuntu-latetst 
+    runs-on: ubuntu-latest
     steps:
       - name: get code
         uses: actions/checkout@v4
